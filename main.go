@@ -190,7 +190,7 @@ func main() {
 		}
 	})
 
-	// /user/[index] 페이지 PUT 접근 시 대상 Index 유무 확인 및 사용자 데이터 삭제 후 삭제된 데이터 전달
+	// /user/[index] 페이지 DELETE 접근 시 대상 Index 유무 확인 및 사용자 데이터 삭제 후 삭제된 데이터 전달
 	userDeleteHandle := httprouter.Handle(func(writer http.ResponseWriter, req *http.Request, param httprouter.Params) {
 		writer.Header().Add("Content-Type", "application/json")
 		index, err := strconv.Atoi(param.ByName("idx"))
