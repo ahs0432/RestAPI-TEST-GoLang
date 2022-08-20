@@ -1,4 +1,4 @@
-module noah.io/ark/rest
+module false.kr/RESTful-Test
 
 go 1.18
 
